@@ -1,0 +1,32 @@
+.marginRight {
+  margin-right: 220px;
+}
+.navbar-margin {
+  font-size: 20px;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+}
+.Add-button {
+  background-color: #ff6e40;
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  color: white;
+}
+.Add-button:hover {
+  background-color: rgb(230, 71, 208);
+  transition: 1s ease-in-out;
+}
+.marginLeft {
+  margin-left: 150px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
