@@ -84,9 +84,9 @@
 .anyQuestion-area .anyQuestion-info::after {
     content: '';
     position: absolute;
-    right: -137px;
+    right: -101px;
     bottom: -122px;
-    width: 480px;
+    width: 422px;
     height: 490px;
     background: url('../../images/AnyQuestion/11.png') no-repeat;
     background-size: contain;
