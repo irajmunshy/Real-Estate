@@ -11,7 +11,7 @@ import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 const BrandArea = () => {
     return (
-        <div className="my-5">
+        <div className="mt-5">
             <div className="brandImage-area">
                 <div className="container">
                     <div className="row">
