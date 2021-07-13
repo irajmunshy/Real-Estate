@@ -1,0 +1,59 @@
+.brandImage-area .image-area {
+    background: url('../../images/brandLogo/15.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    z-index: 99;
+    margin: 0 55px -180px;
+}
+.brandImage-area .image-area a {
+    width: 85px;
+    height: 85px;
+    background: #FF5A3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline-offset: 15px;
+    outline: 4px solid #E4ECF2;
+    margin: 20px;
+    transition: all .3s ease;
+}
+.brandImage-area .image-area a:hover {
+    outline: 4px outset #FFFFFF;
+}
+.brandImage-area .image-area a svg {
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.brand-area {
+    background: url('../../images/brandLogo/7.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 315px 0 110px;
+    position: relative;
+    z-index: 9;
+    /* margin-top: -100px; */
+}
+.brand-area::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(7, 28, 31, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.brand-area .icon {
+    transition: all .3s ease;
+}
+.brand-area .icon:hover {
+    transform: scale(1.10);
+}
