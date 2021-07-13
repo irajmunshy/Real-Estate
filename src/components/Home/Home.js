@@ -1,5 +1,6 @@
 import React from 'react';
 import AnyQuestion from '../AnyQuestion/AnyQuestion';
+import Apartments from '../Apartments/Apartments';
 import Background from '../Background/Background';
 import BrandArea from '../BrandArea/BrandArea';
 import ClientFeedbacks from '../ClientFeedbacks/ClientFeedbacks';
@@ -12,6 +13,7 @@ const Home = () => {
             <AnyQuestion />
             <BrandArea />
             <ClientFeedbacks />
+            <Apartments />
         </div>
     );
 };
