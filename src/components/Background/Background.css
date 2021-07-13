@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
 .mainDiv {
-  background-image: url("../../images/background.jpg");
+  background: url("../../images/background.jpg") no-repeat;
   background-size: 100vw;
   height: 800px;
-  width: 100vw;
-  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 .textDiv {
   margin-top: 150px;
