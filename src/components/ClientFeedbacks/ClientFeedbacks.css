@@ -1,4 +1,39 @@
-.feedback-area .clientTitle {
+.feedback-area {
+    background: url('../../images/clientFeedbacks/8.jpg') no-repeat;
+    padding: 115px 0 70px;
+    background-size: cover;
+    background-position: center center;
+}
+.feedback-area .client-SubTitle {
+    display: inline-block;
     color: #FF5A3C;
     background: #F3E7E5;
+    padding: 5px 20px;
+    border-radius: 25px;
+    margin: 0 233px 15px 0;
+}
+.feedback-area .clientTitle {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.feedback-area .leftArrow, .feedback-area .rightArrow {
+    padding: 18px 22px;
+    cursor: pointer;
+}
+.feedback-area .leftArrow {
+    background: #FF5A3C;
+    color: #fff;
+    margin: 0 10px 0 0;
+}
+.feedback-area .rightArrow {
+    background: #fff;
+    color: #000;
+    margin: 0 0 0 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1) !important;
+    transition: all .3s ease;
+}
+.feedback-area .rightArrow:hover {
+    background: #FF5A3C;
+    color: #fff;
 }
