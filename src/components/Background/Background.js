@@ -1,11 +1,8 @@
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-// import { Selector } from '../Select/Selector';
 import './Background.css';
 const Background = () => {
-
-    
     return (
         <div className="mainDiv">
             <div className='div d-flex justify-content-center'>

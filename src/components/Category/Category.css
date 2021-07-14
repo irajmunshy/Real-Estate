@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+.CategoryDiv {
+  margin-top: 120px;
+}
+.propertyStyle {
+  font-size: 18px;
+  background-color: #ffefec;
+  color: #ff5a3c;
+  padding: 5px;
+  border-radius: 25px;
+}
+
+.MainDIv {
+  display: grid;
+  height: 100vh;
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-template-columns: repeat(4, 3fr);
+  grid-template-rows: repeat(8, 20vw);
+}
+.item {
+  background-color: rgb(105, 82, 82);
+}
+@media only screen and (max-width: 600px) {
+  .CategoryDiv {
+    background-color: lightblue;
+  }
+}
+.s1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background-size: cover;
+}
+.s3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-size: cover;
+}
+.s4 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-size: cover;
+}
+.s2 {
+  background-size: cover;
+}
+.item {
+  position: relative;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.headingStyle {
+  font-size: 44px;
+  font-weight: 700;
+  color: #052125;
+  margin-bottom: 50px;
+}
+.textOnBackground {
+  position: absolute;
+  margin-top: 150px;
+  color: white;
+  margin-left: 350px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.paragraphText {
+  position: absolute;
+  margin-top: 200px;
+  color: white;
+  margin-left: 390px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.backgroundBtn {
+  position: absolute;
+  margin-top: 230px;
+  color: white;
+  margin-left: 405px;
+  background-color: #ff5a3c;
+  padding: 3px 15px;
+  border-radius: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.textOnBackground2 {
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 90px;
+  color: white;
+  font-size: 2vw;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.paragraphText2 {
+  position: absolute;
+  margin-top: 190px;
+  color: white;
+  margin-left: 80px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.backgroundBtn2 {
+  position: absolute;
+  margin-top: 220px;
+  color: white;
+  margin-left: 100px;
+  background-color: #ff5a3c;
+  padding: 3px 15px;
+  border-radius: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.textOnBackground3 {
+  position: absolute;
+  margin-top: 150px;
+  color: white;
+  margin-left: 250px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.paragraphText3 {
+  position: absolute;
+  margin-top: 200px;
+  color: white;
+  margin-left: 250px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.backgroundBtn3 {
+  position: absolute;
+  margin-top: 230px;
+  color: white;
+  margin-left: 270px;
+  background-color: #ff5a3c;
+  padding: 3px 15px;
+  border-radius: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.textOnBackground4 {
+  position: absolute;
+  margin-top: 150px;
+  color: white;
+  margin-left: 250px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.paragraphText4 {
+  position: absolute;
+  margin-top: 200px;
+  color: white;
+  margin-left: 250px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.backgroundBtn4 {
+  position: absolute;
+  margin-top: 230px;
+  color: white;
+  margin-left: 270px;
+  background-color: #ff5a3c;
+  padding: 3px 15px;
+  border-radius: 25px;
+  font-family: "Source Sans Pro", sans-serif;
+}
