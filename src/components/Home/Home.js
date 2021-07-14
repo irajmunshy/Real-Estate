@@ -1,7 +1,11 @@
 import React from 'react';
+import AnyQuestion from '../AnyQuestion/AnyQuestion';
+import Apartments from '../Apartments/Apartments';
 import Background from '../Background/Background';
+import BrandArea from '../BrandArea/BrandArea';
 import Category from '../Category/Category';
-import Feature from '../Features/Features';
+import ClientFeedbacks from '../ClientFeedbacks/ClientFeedbacks';
+import Features from '../Features/Features';
 import Navbar from '../Navbar/Navbar';
 const Home = () => {
     return (
@@ -9,7 +13,11 @@ const Home = () => {
             <Navbar/>
             <Background/>
             <Category/>
-            <Feature/>
+            <Features/>
+            <AnyQuestion />
+            <BrandArea />
+            <ClientFeedbacks />
+            <Apartments/>
         </div>
     );
 };
