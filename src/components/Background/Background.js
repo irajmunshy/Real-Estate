@@ -11,7 +11,7 @@ const Background = () => {
                         <FontAwesomeIcon icon={faHome} />
                         <h6>Real Estate Agency</h6>
                     </div>
-                    <h1 className="headerText">FIND YOUR DREAM <br /> HOUSE BY US</h1>
+                    <h1 className="headerText text-center">FIND YOUR DREAM <br /> HOUSE BY US</h1>
                 </div>
             </div>
             <div className="container">

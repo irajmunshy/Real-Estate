@@ -1,0 +1,67 @@
+.apartment-area .apartmentInfo {
+    position: relative;
+    transition: all .7s ease 0s;
+}
+.apartment-area .apartmentInfo:hover img {
+    transform: scale(1.1);
+}
+.apartment-area .apartmentInfo a {
+    display: block;
+    overflow: hidden;
+}
+.apartment-area .apartmentInfo img {
+    transition: all .5s ease 0s;
+}
+.apartment-area .apartmentInfo .toggle {
+    display: none;
+    transition: all .7s ease 0s;
+}
+.apartment-area .apartmentInfo:hover .toggle {
+    display: block;
+}
+.apartment-area .apartmentInfo .apartmentMore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 35px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease 0s;
+}
+.apartment-area .apartmentInfo .apartmentMore .detail {
+    text-align: left;
+}
+.apartment-area .apartmentInfo .apartmentMore .detail h6 {
+    margin: 0 0 5px 0;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+.apartment-area .apartmentInfo .apartmentMore .detail h1 {
+    margin-bottom: 0;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s ease;
+}
+.apartment-area .apartmentInfo .apartmentMore .detail h1:hover {
+    color: #FF5A3C;
+    cursor: pointer;
+}
+.apartment-area .apartmentInfo .apartmentMore .btn-wrapper a {
+    text-transform: uppercase;
+    background: #FF5A3C;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px 13px;
+    transition: all .3s ease;
+    border: 1px solid #FF5A3C
+}
+.apartment-area .apartmentInfo .apartmentMore .btn-wrapper a:hover {
+    border-color: #000;
+    color: #000;
+    background: #fff;
+}

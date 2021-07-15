@@ -65,7 +65,7 @@ const ClientFeedbacks = () => {
             return (
               <div
                 className={className}
-                style={{ ...style, display: "block" }}
+                style={{ ...style, display: "none" }}
                 onClick={onClick}
               />
             );
@@ -76,7 +76,7 @@ const ClientFeedbacks = () => {
         return (
           <div
             className={className}
-            style={{ ...style, display: "block", background: "#FF5A3C", color: "#fff" }}
+            style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
             onClick={onClick}
           />
         );
@@ -96,12 +96,17 @@ const ClientFeedbacks = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <div className="d-flex justify-content-start pb-3 px-3">
-                            <div>
+                        <div className="d-flex pb-3 px-3 justify-content-between">
+                            <div className="">
                                 <h6 className="client-SubTitle">Testimonials</h6>
                                 <h1 className="clientTitle">Clients Feedbacks</h1>
                             </div>
-                        </div>
+
+                            <div className="mt-5">
+                                <button className="leftArrow" > <FontAwesomeIcon icon={faArrowLeft} /> </button>
+                                <button className="rightArrow"><FontAwesomeIcon icon={faArrowRight} /></button>
+                            </div>
+                        </div> 
 
                         <div className="mt-5">
                             <Slider {...settings}>
@@ -141,14 +146,3 @@ const ClientFeedbacks = () => {
 
 export default ClientFeedbacks;
 
-{/* <div className="d-flex pb-3 px-3 justify-content-between">
-                            <div className="">
-                                <h6 className="client-SubTitle">Testimonials</h6>
-                                <h1 className="clientTitle">Clients Feedbacks</h1>
-                            </div>
-
-                            <div className="mt-5">
-                                <button className="leftArrow" > <FontAwesomeIcon icon={faArrowLeft} /> </button>
-                                <button className="rightArrow"><FontAwesomeIcon icon={faArrowRight} /></button>
-                            </div>
-                        </div> */}
