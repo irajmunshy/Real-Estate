@@ -6,14 +6,14 @@ const Navbar = () => {
     return (
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-            <Link class="navbar-brand marginLeft" to="/"> <img src={logo} alt="RandomImg"/> </Link>
+                <Link class="navbar-brand marginLeft" to="/"> <img src={logo} alt="RandomImg" /> </Link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end marginRight" id="navbarNav">
-                    <ul class="navbar-nav">   
+                    <ul class="navbar-nav">
                         <li class="nav-item navbar-margin">
-                            <Link class="nav-link active"  to="/">Home+</Link>
+                            <Link class="nav-link active" to="/">Home+</Link>
                         </li>
                         <li class="nav-item navbar-margin">
                             <Link class="nav-link active" to="/">About+</Link>
@@ -30,8 +30,8 @@ const Navbar = () => {
                         <li class="nav-item navbar-margin">
                             <Link class="nav-link active" to="/">Contact</Link>
                         </li>
-                        <li class="nav-item Add-button ">
-                            <Link class="nav-link active text-white" to="/">Add Listed</Link>
+                        <li className="nav-item Add-button">
+                            <Link className="nav-link active text-white" to="/">Add Listed</Link>
                         </li>
 
                     </ul>

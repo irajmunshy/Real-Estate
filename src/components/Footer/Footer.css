@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.MainContainer {
+  justify-content: center;
+}
+.middleContainer {
+  background-color: #171b2a;
+  margin-top: 200px;
+}
+.ContainerDiv {
+  width: 70%;
+  height: 170px;
+  background-color: #ff5a3c;
+  margin-top: -100px;
+  justify-content: space-between;
+  padding: 50px 60px;
+  color: white;
+}
+.explorebtn {
+  border: none;
+  height: 60px;
+  width: 250px;
+  font-size: large;
+  background-color: white;
+  color: black;
+  transition: ease-out 0.3s;
+  outline: none;
+}
+.explorebtn:hover {
+  box-shadow: inset 250px 0 0 0 black;
+  color: white;
+}
+.Footer-area {
+  background-color: #171b2a;
+}
+.social-media .icon {
+  color: white;
+}
+.social-media .icon:hover {
+  transition: all 0.5s;
+  font-size: 1.5rem;
+}
+.locationIcon .icon {
+  color: white;
+}
+.fieldStyle {
+  height: 65px;
+  width: 260px;
+  border: none;
+}
+.search-container {
+  float: right;
+}
+.search-container button {
+  height: 65px;
+  background: #ff5a3c;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.search-container button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s;
+}
+.listAll {
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+}
+.listItems {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.listAll:hover {
+  color: orangered;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+}
+.copyRight {
+  background-color: #282b38;
+  height: 70px;
+}
+.footerMargin {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+}

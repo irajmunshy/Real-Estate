@@ -6,6 +6,7 @@ import BrandArea from '../BrandArea/BrandArea';
 import Category from '../Category/Category';
 import ClientFeedbacks from '../ClientFeedbacks/ClientFeedbacks';
 import Features from '../Features/Features';
+import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             <BrandArea />
             <ClientFeedbacks />
             <Apartments/>
+            <Footer/>
         </div>
     );
 };

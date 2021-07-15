@@ -12,11 +12,18 @@
   height: 50px;
   width: 150px;
   font-size: 20px;
-  color: white;
+  color: rgb(10, 10, 10);
 }
 .Add-button:hover {
-  background-color: rgb(230, 71, 208);
-  transition: 1s ease-in-out;
+  background-color: whitesmoke;
+  color: #020202;
+  transition: all 0.2s;
+}
+.Add-button a {
+  color: #020202;
+}
+.Add-button a {
+  margin-left: 20px;
 }
 .marginLeft {
   margin-left: 150px;
