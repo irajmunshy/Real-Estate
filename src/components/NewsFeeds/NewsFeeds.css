@@ -1,0 +1,90 @@
+.newsFeeds-area {
+    padding: 110px 0 70px;
+}
+.newsFeeds-area .feedHeader {
+    margin: 0 0 50px 0;
+}
+.newsFeeds-area .feedHeader h6 {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 25px;
+    position: relative;
+    color: #FF5A3C;
+    font-size: 17px;
+    background: #FFEFEC;
+}
+.newsFeeds-area .feedHeader h1 {
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 5px 0 0 0;
+}
+.newsFeeds-area .newsFeeds-container {
+    position: relative;
+    padding: 0 15px;
+}
+.newsFeeds-area .newsFeeds-container:hover .imgArea img {
+    transform: scale(1.1);
+}
+.newsFeeds-area .newsFeeds-container .imgArea {
+    position: relative;
+    overflow: hidden;
+}
+.newsFeeds-area .newsFeeds-container .imgArea img {
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+}
+
+.newsFeeds-area .newsFeeds-container .brief {
+    box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+    padding: 30px 30px 30px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    text-align: left;
+    margin: 0 0 30px 0;
+}
+.newsFeeds-area .newsFeeds-container .brief .adminArea {
+    margin: 0 0 20px 0;
+}
+.newsFeeds-area .newsFeeds-container .brief .adminArea a:first-child {
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 25px;
+    position: relative;
+    font-size: 14px;
+}
+.newsFeeds-area .newsFeeds-container .brief a {
+    text-decoration: none;
+}
+.newsFeeds-area .newsFeeds-container .brief h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    transition: all .2s ease;
+}
+.newsFeeds-area .newsFeeds-container .brief h3:hover {
+    color: #FF5A3C;
+}
+.newsFeeds-area .newsFeeds-container .brief .adminArea span {
+    color: #5C727D;
+    transition: all .1s ease;
+}
+.newsFeeds-area .newsFeeds-container .brief .adminArea span:hover {
+    color: #ff5a3c;
+}
+.newsFeeds-area .newsFeeds-container .brief svg {
+    color: #ff5a3c;
+    margin: 0 3px 0 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+.newsFeeds-area .newsFeeds-container .brief .briefHeader {
+    border-bottom: 1px solid #e5eaee;
+    padding: 0 0 5px 0;
+}
+.newsFeeds-area .newsFeeds-container .brief .readMoreBtn {
+    color: #FF5A3C;
+    text-transform: uppercase;
+}

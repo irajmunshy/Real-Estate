@@ -7,6 +7,7 @@ import Category from '../Category/Category';
 import ClientFeedbacks from '../ClientFeedbacks/ClientFeedbacks';
 import Features from '../Features/Features';
 import Navbar from '../Navbar/Navbar';
+import NewsFeeds from '../NewsFeeds/NewsFeeds';
 const Home = () => {
     return (
         <div>
@@ -18,6 +19,7 @@ const Home = () => {
             <BrandArea />
             <ClientFeedbacks />
             <Apartments/>
+            <NewsFeeds />
         </div>
     );
 };
