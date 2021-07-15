@@ -42,7 +42,7 @@ const Apartments = () => {
             return (
               <div
                 className={className}
-                style={{ ...style, display: "block" }}
+                style={{ ...style, display: "none" }}
                 onClick={onClick}
               />
             );
@@ -53,7 +53,7 @@ const Apartments = () => {
         return (
           <div
             className={className}
-            style={{ ...style, display: "block", background: "#FF5A3C", color: "#fff" }}
+            style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
             onClick={onClick}
           />
         );
