@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Slider from "react-slick";
 import a1 from '../../images/apartments/a1.jpg';
 import a2 from '../../images/apartments/a2.jpg';
 import a3 from '../../images/apartments/a3.jpg';
 import a4 from '../../images/apartments/a4.jpg';
+import './Apartments.css';
 
 const apartments = [
     {
@@ -60,20 +62,35 @@ const Apartments = () => {
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     };
 
     return (
-        <div>
+        <div className="apartment-area">
             <div>
                 <Slider {...settings}>
                     {
                         apartments.map(apartment =>   
-                            <div>
-                                <img src={apartment.img} alt="" />
+                            <div className="apartmentInfo">
+                                <Link to="">
+                                    <img className="img-fluid" src={apartment.img} alt="" />
+                                </Link>
+
+                                <div className="toggle">
+                                    <div className="apartmentMore">
+                                        <div className="detail">
+                                            <h6>{apartment.subTitle}</h6>
+                                            <h1>{apartment.title}</h1>
+                                        </div>
+
+                                        <div className="btn-wrapper">
+                                            <Link className="" to="">Details</Link>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         )
                     }
