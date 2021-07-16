@@ -63,22 +63,28 @@ const NewsFeeds = () => {
         const { className, style, onClick } = props;
             console.log(props)
             return (
-              <div
-                className={className}
-                style={{ ...style, display: "none" }}
-                onClick={onClick}
-              />
+            //   <div
+            //     className={className}
+            //     style={{ ...style, display: "none" }}
+            //     onClick={onClick}
+            //   />
+                <Link className="leftArw" onClick={onClick} to="">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
             );
     };
 
     const SamplePrevArrow = (props) => {
         const { className, style, onClick } = props;
         return (
-          <div
-            className={className}
-            style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
-            onClick={onClick}
-          />
+        //   <div
+        //     className={className}
+        //     style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
+        //     onClick={onClick}
+        //   />
+            <Link className="rightArw" onClick={onClick} to="">
+                <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
         );
     }
 
@@ -104,10 +110,6 @@ const NewsFeeds = () => {
                 </div>
 
                 <div className="row mx-5 sideArrow">
-                    <Link className="leftArw" to="">
-                        <FontAwesomeIcon icon={faArrowLeft} />
-                    </Link>
-
                     <Slider {...settings}>
                         {
                             newsFeeds.map(news =>
@@ -147,10 +149,6 @@ const NewsFeeds = () => {
                             )
                         }
                     </Slider>
-
-                    <Link className="rightArw" to="">
-                        <FontAwesomeIcon icon={faArrowRight} />
-                    </Link>
                 </div>
             </div>
         </div>
