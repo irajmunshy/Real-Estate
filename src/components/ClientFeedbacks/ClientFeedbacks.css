@@ -3,6 +3,7 @@
     padding: 115px 125px 70px;
     background-size: cover;
     background-position: center center;
+    position: relative;
 }
 .feedback-area .client-SubTitle {
     display: inline-block;
@@ -23,11 +24,17 @@
     border: none;
 }
 .feedback-area .leftArrow {
+    position: absolute;
     background: #FF5A3C;
     color: #fff;
     margin: 0 10px 0 0;
+    right: 85px;
+    top: -124px;
 }
 .feedback-area .rightArrow {
+    position: absolute;
+    right: 16px;
+    top: -124px;
     background: #fff;
     color: #000;
     margin: 0 0 0 10px;
