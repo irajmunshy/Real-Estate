@@ -40,24 +40,29 @@ const apartments = [
 const Apartments = () => {
     const SampleNextArrow = (props) => {
         const { className, style, onClick } = props;
-            console.log(props)
             return (
-              <div
-                className={className}
-                style={{ ...style, display: "none" }}
-                onClick={onClick}
-              />
+            //   <div
+            //     className={className}
+            //     style={{ ...style, display: "none" }}
+            //     onClick={onClick}
+            //   />
+                <Link className="leftAp" onClick={onClick} to="">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
             );
     };
 
     const SamplePrevArrow = (props) => {
         const { className, style, onClick } = props;
         return (
-          <div
-            className={className}
-            style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
-            onClick={onClick}
-          />
+        //   <div
+        //     className={className}
+        //     style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
+        //     onClick={onClick}
+        //   />
+            <Link className="rightAp" onClick={onClick} to="">
+                <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
         );
     }
     
@@ -73,10 +78,6 @@ const Apartments = () => {
     return (
         <div className="apartment-area">
             <div>
-                <Link className="leftAp" to="">
-                    <FontAwesomeIcon icon={faArrowLeft} />
-                </Link>
-
                 <Slider {...settings}>
                     {
                         apartments.map(apartment =>   
@@ -99,10 +100,6 @@ const Apartments = () => {
                         )
                     }
                 </Slider>
-
-                <Link className="rightAp" to="">
-                    <FontAwesomeIcon icon={faArrowRight} />
-                </Link>
             </div>
         </div>
     );
