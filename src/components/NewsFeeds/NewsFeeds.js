@@ -8,7 +8,7 @@ import n4 from '../../images/newsFeeds/4.jpg';
 import n5 from '../../images/newsFeeds/5.jpg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faUser, faTags } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faUser, faTags, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const newsFeeds = [
     {
@@ -103,7 +103,11 @@ const NewsFeeds = () => {
                     </div>
                 </div>
 
-                <div className="row mx-5">
+                <div className="row mx-5 sideArrow">
+                    <Link className="leftArw" to="">
+                        <FontAwesomeIcon icon={faArrowLeft} />
+                    </Link>
+
                     <Slider {...settings}>
                         {
                             newsFeeds.map(news =>
@@ -143,6 +147,10 @@ const NewsFeeds = () => {
                             )
                         }
                     </Slider>
+
+                    <Link className="rightArw" to="">
+                        <FontAwesomeIcon icon={faArrowRight} />
+                    </Link>
                 </div>
             </div>
         </div>

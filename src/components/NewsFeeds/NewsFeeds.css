@@ -88,3 +88,48 @@
     color: #FF5A3C;
     text-transform: uppercase;
 }
+
+.sideArrow {
+    position: relative;
+}
+.sideArrow:hover .leftArw {
+    left: -38px;
+}
+.sideArrow:hover .rightArw {
+    right: -38px;
+}
+.sideArrow .leftArw, .sideArrow .rightArw {
+    position: absolute;
+    top: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #e6ecf0;
+    border-radius: 100%;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.sideArrow:hover .leftArw, .sideArrow:hover .rightArw {
+    opacity: 1;
+}
+.sideArrow .leftArw:hover, .sideArrow .rightArw:hover {
+    background: #ff5a3c;
+    border-color: #FF5A3C;
+}
+.sideArrow .leftArw svg, .sideArrow .rightArw svg {
+    color: #000;
+    font-size: 19px;
+}
+.sideArrow .leftArw:hover svg, .sideArrow .rightArw:hover svg {
+    color: #fff;
+}
+.sideArrow .leftArw {
+    left: 26px;
+    z-index: 99;
+}
+.sideArrow .rightArw {
+    right: 26px;
+}

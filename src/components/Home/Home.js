@@ -8,6 +8,7 @@ import ClientFeedbacks from '../ClientFeedbacks/ClientFeedbacks';
 import Features from '../Features/Features';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
+import NewsFeeds from '../NewsFeeds/NewsFeeds';
 const Home = () => {
     return (
         <div>
@@ -19,6 +20,7 @@ const Home = () => {
             <BrandArea />
             <ClientFeedbacks />
             <Apartments/>
+            <NewsFeeds />
             <Footer/>
         </div>
     );
