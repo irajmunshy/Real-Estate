@@ -1,3 +1,5 @@
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
@@ -71,6 +73,10 @@ const Apartments = () => {
     return (
         <div className="apartment-area">
             <div>
+                <Link className="leftAp" to="">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
+
                 <Slider {...settings}>
                     {
                         apartments.map(apartment =>   
@@ -79,22 +85,24 @@ const Apartments = () => {
                                     <img className="img-fluid" src={apartment.img} alt="" />
                                 </Link>
 
-                                <div className="toggle">
-                                    <div className="apartmentMore">
-                                        <div className="detail">
-                                            <h6>{apartment.subTitle}</h6>
-                                            <h1>{apartment.title}</h1>
-                                        </div>
+                                <div className="apartmentMore">
+                                    <div className="detail">
+                                        <h6>{apartment.subTitle}</h6>
+                                        <h1>{apartment.title}</h1>
+                                    </div>
 
-                                        <div className="btn-wrapper">
-                                            <Link className="" to="">Details</Link>
-                                        </div>
+                                    <div className="btn-wrapper">
+                                        <Link className="" to="">Details</Link>
                                     </div>
                                 </div>
                             </div>
                         )
                     }
                 </Slider>
+
+                <Link className="rightAp" to="">
+                    <FontAwesomeIcon icon={faArrowRight} />
+                </Link>
             </div>
         </div>
     );

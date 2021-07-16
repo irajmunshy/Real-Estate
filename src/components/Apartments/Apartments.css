@@ -1,6 +1,8 @@
+.apartment-area  {
+    position: relative;
+}
 .apartment-area .apartmentInfo {
     position: relative;
-    transition: all .7s ease 0s;
 }
 .apartment-area .apartmentInfo:hover img {
     transform: scale(1.1);
@@ -11,13 +13,6 @@
 }
 .apartment-area .apartmentInfo img {
     transition: all .5s ease 0s;
-}
-.apartment-area .apartmentInfo .toggle {
-    display: none;
-    transition: all .7s ease 0s;
-}
-.apartment-area .apartmentInfo:hover .toggle {
-    display: block;
 }
 .apartment-area .apartmentInfo .apartmentMore {
     display: flex;
@@ -30,6 +25,10 @@
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease 0s;
+    opacity: 0;
+}
+.apartment-area .apartmentInfo:hover .apartmentMore {
+    opacity: 1;
 }
 .apartment-area .apartmentInfo .apartmentMore .detail {
     text-align: left;
@@ -64,4 +63,57 @@
     border-color: #000;
     color: #000;
     background: #fff;
+}
+
+.apartment-area .leftAp, .apartment-area .rightAp {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 47%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #e6ecf0;
+    border-radius: 100%;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.apartment-area:hover .leftAp, .apartment-area:hover .rightAp {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 47%;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #e6ecf0;
+    border-radius: 100%;
+    transition: all .3s ease;
+    opacity: 1;
+}
+.apartment-area .leftAp:hover, .apartment-area .rightAp:hover {
+   background: #FF5A3C;
+   border-color: #FF5A3C;
+}
+.apartment-area .leftAp svg, .apartment-area .rightAp svg {
+    color: #000;
+    font-size: 19px;
+}
+.apartment-area .leftAp:hover svg, .apartment-area .rightAp:hover svg {
+    color: #fff;
+}
+.apartment-area .leftAp {
+    left: -50px;
+    z-index: 99;
+}
+.apartment-area:hover .leftAp {
+    left: 50px;
+}
+.apartment-area .rightAp {
+    right: -50px;
+}
+.apartment-area:hover .rightAp {
+    right: 50px;
 }
