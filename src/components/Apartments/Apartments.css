@@ -56,13 +56,13 @@
     text-decoration: none;
     color: #fff;
     padding: 15px 20px 13px;
-    transition: all .3s ease;
+    transition: all 1s ease;
     border: 1px solid #FF5A3C
 }
 .apartment-area .apartmentInfo .apartmentMore .btn-wrapper a:hover {
     border-color: #000;
     color: #000;
-    background: #fff;
+    box-shadow: inset 250px 0 50px 0 #fff;
 }
 
 .apartment-area .leftAp, .apartment-area .rightAp {
