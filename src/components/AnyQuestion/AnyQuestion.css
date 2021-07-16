@@ -38,36 +38,15 @@
 }
 .anyQuestion-area .anyQuestion-info .contactBtn {
     border: .5px solid #fff;
-}
-.anyQuestion-area .anyQuestion-info .callBtn span {
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fff;
-    z-index: -1;
-    transition: all 0.3s ease;
-}
-.anyQuestion-area .anyQuestion-info .contactBtn span {
-    width: 0;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #FF5A3C;
-    z-index: -1;
-    transition: all 0.3s ease;
-}
-.anyQuestion-area .anyQuestion-info .callBtn:hover span, .anyQuestion-area .anyQuestion-info .contactBtn:hover span {
-    width: 100%;
-}
-.anyQuestion-area .anyQuestion-info .callBtn:hover {
-    color: #000;
-    border: .5px solid #000;
+    background: none;
 }
 .anyQuestion-area .anyQuestion-info .contactBtn:hover {
-    background: #FF5A3C;
+    box-shadow: inset 250px 0 0 0 #FF5A3C;
+}
+.anyQuestion-area .anyQuestion-info .callBtn:hover {
+    border: .5px solid #000;
+    color: #000;
+    box-shadow: inset 250px 0 0 0 #fff;
 }
 .anyQuestion-area .anyQuestion-info::before {
     content: '';
