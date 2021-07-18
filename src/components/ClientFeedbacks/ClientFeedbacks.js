@@ -61,24 +61,25 @@ const feedbacks = [
 const ClientFeedbacks = () => {
     const SampleNextArrow = (props) => {
         const { className, style, onClick } = props;
-            console.log(props)
             return (
-              <div
-                className={className}
-                style={{ ...style, display: "none" }}
-                onClick={onClick}
-              />
+            //   <div
+            //     className={className}
+            //     style={{ ...style, display: "none" }}
+            //     onClick={onClick}
+            //   />
+                <button className="leftArrow" onClick={onClick} > <FontAwesomeIcon icon={faArrowLeft} /></button>
             );
     };
 
     const SamplePrevArrow = (props) => {
         const { className, style, onClick } = props;
         return (
-          <div
-            className={className}
-            style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
-            onClick={onClick}
-          />
+        //   <div
+        //     className={className}
+        //     style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
+        //     onClick={onClick}
+        //   />
+            <button className="rightArrow" onClick={onClick}><FontAwesomeIcon icon={faArrowRight} /></button>
         );
     }
 
@@ -103,8 +104,8 @@ const ClientFeedbacks = () => {
                             </div>
 
                             <div className="mt-5">
-                                <button className="leftArrow" > <FontAwesomeIcon icon={faArrowLeft} /> </button>
-                                <button className="rightArrow"><FontAwesomeIcon icon={faArrowRight} /></button>
+                                {/* <button className="leftArrow" > <FontAwesomeIcon icon={faArrowLeft} /> </button> */}
+                                {/* <button className="rightArrow"><FontAwesomeIcon icon={faArrowRight} /></button> */}
                             </div>
                         </div> 
 

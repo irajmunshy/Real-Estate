@@ -13,8 +13,8 @@ const AnyQuestion = () => {
                             <h1 className="anyTitle text-center">897-876-987-90</h1>
 
                             <div className="mt-5 text-center">
-                                <Link to="" className="callBtn me-2"><span></span>Make a Call</Link>
-                                <Link to="" className="contactBtn ms-2"><span></span>Contact US</Link>
+                                <Link to="" className="callBtn explorebtn me-2">Make a Call</Link>
+                                <Link to="" className="contactBtn explorebtn ms-2">Contact US</Link>
                             </div>
                         </div>
                     </div>

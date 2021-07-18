@@ -1,3 +1,5 @@
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from "react-slick";
@@ -38,24 +40,29 @@ const apartments = [
 const Apartments = () => {
     const SampleNextArrow = (props) => {
         const { className, style, onClick } = props;
-            console.log(props)
             return (
-              <div
-                className={className}
-                style={{ ...style, display: "none" }}
-                onClick={onClick}
-              />
+            //   <div
+            //     className={className}
+            //     style={{ ...style, display: "none" }}
+            //     onClick={onClick}
+            //   />
+                <Link className="leftAp" onClick={onClick} to="">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
             );
     };
 
     const SamplePrevArrow = (props) => {
         const { className, style, onClick } = props;
         return (
-          <div
-            className={className}
-            style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
-            onClick={onClick}
-          />
+        //   <div
+        //     className={className}
+        //     style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
+        //     onClick={onClick}
+        //   />
+            <Link className="rightAp" onClick={onClick} to="">
+                <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
         );
     }
     
@@ -79,16 +86,14 @@ const Apartments = () => {
                                     <img className="img-fluid" src={apartment.img} alt="" />
                                 </Link>
 
-                                <div className="toggle">
-                                    <div className="apartmentMore">
-                                        <div className="detail">
-                                            <h6>{apartment.subTitle}</h6>
-                                            <h1>{apartment.title}</h1>
-                                        </div>
+                                <div className="apartmentMore">
+                                    <div className="detail">
+                                        <h6>{apartment.subTitle}</h6>
+                                        <h1>{apartment.title}</h1>
+                                    </div>
 
-                                        <div className="btn-wrapper">
-                                            <Link className="" to="">Details</Link>
-                                        </div>
+                                    <div className="btn-wrapper">
+                                        <Link className="" to="">Details</Link>
                                     </div>
                                 </div>
                             </div>

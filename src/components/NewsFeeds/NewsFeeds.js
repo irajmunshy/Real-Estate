@@ -8,7 +8,7 @@ import n4 from '../../images/newsFeeds/4.jpg';
 import n5 from '../../images/newsFeeds/5.jpg';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faUser, faTags } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarAlt, faUser, faTags, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const newsFeeds = [
     {
@@ -63,22 +63,28 @@ const NewsFeeds = () => {
         const { className, style, onClick } = props;
             console.log(props)
             return (
-              <div
-                className={className}
-                style={{ ...style, display: "none" }}
-                onClick={onClick}
-              />
+            //   <div
+            //     className={className}
+            //     style={{ ...style, display: "none" }}
+            //     onClick={onClick}
+            //   />
+                <Link className="leftArw" onClick={onClick} to="">
+                    <FontAwesomeIcon icon={faArrowLeft} />
+                </Link>
             );
     };
 
     const SamplePrevArrow = (props) => {
         const { className, style, onClick } = props;
         return (
-          <div
-            className={className}
-            style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
-            onClick={onClick}
-          />
+        //   <div
+        //     className={className}
+        //     style={{ ...style, display: "none", background: "#FF5A3C", color: "#fff" }}
+        //     onClick={onClick}
+        //   />
+            <Link className="rightArw" onClick={onClick} to="">
+                <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
         );
     }
 
@@ -103,7 +109,7 @@ const NewsFeeds = () => {
                     </div>
                 </div>
 
-                <div className="row mx-5">
+                <div className="row mx-5 sideArrow">
                     <Slider {...settings}>
                         {
                             newsFeeds.map(news =>
